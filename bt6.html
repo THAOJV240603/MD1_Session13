@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <script>
+        var product = [
+            {id:"1", name:"iPhone 12", price: 20000000},
+            {id:"2", name:"iPhone 11", price: 10000000},
+            {id:"3", name:"Samsung Note 10", price: 50000000}];        
+            
+        function SortPrice(product) {
+            product.sort((a, b) => a.price - b.price);
+            for(var i = 0; i < product.length; i++)
+            {                    
+                 document.write(product[i].id + " " + product[i].name+ " " + product[i].price + "<br>")
+            }
+        }
+        SortPrice(product);
+
+        
+    </script>
+</body>
+</html>

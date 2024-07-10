@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infomation</title>
+</head>
+<body>
+    <script>
+        var infor = {
+            id: "JV240603",
+            name: "Le Phuong Thao",
+            phone: 1234567890,
+            address: "Japan",
+            showInfo: function(){
+                document.write(`ID: ${this.id}<br>`)
+                document.write(`Họ và tên: ${this.name}<br>`)
+                document.write(`Số điện thoại: ${this.phone}<br>`)
+                document.write(`Email: ${this.email}<br>`)
+            }
+        }
+
+        delete infor.address;
+        infor.email = "javascript@gmail.com";
+        infor.showInfo();
+    </script>
+</body>
+</html>

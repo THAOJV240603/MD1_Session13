@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sách</title>
+</head>
+<body>
+    <script>
+        
+        var book = [
+            {author:"Aoyama Gosho", name:"Detective Conan"},
+            {author:"Fujiko F. Fujio", name:"Doraemon"},
+            {author:"John Vũ", name:"Muôn kiếp nhân sinh"}];
+
+        var au = prompt("Nhập tên tác giả:");
+       
+        check = false;
+
+        for( var i = 0; i < book.length; i++)
+        {
+            if (au.toLowerCase()===book[i].author.toLowerCase())
+            {
+                document.write("Tác giả: " + book[i].author + "<br>");
+                document.write("Tên sách: " + book[i].name);
+                check = true;
+                break;         
+            }
+        }
+      
+        if (check == false) 
+        {
+            document.write("Không tìm thấy sách")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <script>
+        var product = {
+            id: prompt("Nhập mã sản phẩm:"),
+            name: prompt("Nhập tên sản phẩm:"),
+            price: prompt("Nhập giá:"),
+            quantity: prompt("Nhập số lượng"),
+            showProduct: function(){
+                document.write(`Mã sản phẩm: ${this.id}<br>`)
+                document.write(`Tên sản phẩm: ${this.name}<br>`)
+                document.write(`Giá: ${this.price}<br>`)
+                document.write(`Số lượng: ${this.quantity}<br>`)
+            }
+        }
+
+        product.showProduct();
+    </script>
+</body>
+</html>
